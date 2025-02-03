@@ -20,7 +20,6 @@ const JobCard = ({
   tags,
   type,
   logo,
-  id,
 }: JobCardProps) => {
   return (
     <Card className="border border-gray-200 shadow-sm">

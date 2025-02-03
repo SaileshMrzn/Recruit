@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useCallback, useEffect, useState } from "react";
+import { MapPin, Search, List, ChevronDown } from "lucide-react";
 
 import {
   Popover,
@@ -8,9 +9,6 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 
-import { MapPin, Search, List, ChevronDown } from "lucide-react";
-
-import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
 const cities = ["Kathmandu", "Pokhara", "Lalitpur", "Bhaktapur"];
