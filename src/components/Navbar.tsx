@@ -1,5 +1,8 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import {
   Sheet,
@@ -8,6 +11,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { Dot } from "lucide-react";
 
 import { navLinks } from "@/constants/navLinks";
 import { Logos, Icons } from "@/constants/icons";
@@ -15,6 +19,8 @@ import { Logos, Icons } from "@/constants/icons";
 import { Button } from "./ui/button";
 
 const Navbar = () => {
+  const pathname = usePathname();
+
   return (
     <div className="flex justify-between items-center p-2 lg:px-8 lg:py-4 bg-white">
       {/* logo */}
@@ -24,11 +30,27 @@ const Navbar = () => {
       </div>
       {/* nav links */}
       <nav className="hidden lg:flex w-1/2 lg:justify-between">
-        {navLinks.map((nav, index) => (
-          <Link href={nav.link} key={index}>
-            {nav.title}
-          </Link>
-        ))}
+        {navLinks.map((nav, index) => {
+          const isActive = pathname === nav.link;
+          return (
+            <Link
+              href={nav.link}
+              key={index}
+              className={`${
+                isActive ? "text-primary font-semibold" : "text-gray-700"
+              } hover:text-primary items-center justify-center relative`}
+            >
+              {nav.title}
+              <div
+                className={`${
+                  isActive ? "absolute" : "hidden"
+                } left-1/2 transform -translate-x-1/2 -bottom-5 flex justify-center w-full`}
+              >
+                <Dot />
+              </div>
+            </Link>
+          );
+        })}
       </nav>
 
       <div className="lg:hidden">

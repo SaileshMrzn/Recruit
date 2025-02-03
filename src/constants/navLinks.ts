@@ -5,15 +5,15 @@ export const navLinks = [
   },
   {
     title: "Explore Jobs",
-    link: "/home",
+    link: "/",
   },
   {
     title: "Trainings",
-    link: "/home",
+    link: "/trainings",
   },
   {
     title: "Why Recruit Nepal",
-    link: "/home",
+    link: "/recruit",
   },
   {
     title: "Contact Us",

@@ -52,6 +52,7 @@ export default {
         },
         primary: "#2697D4",
         secondary: "#020617",
+        primary_light: "#F2F9FD",
       },
       borderRadius: {
         lg: "var(--radius)",
