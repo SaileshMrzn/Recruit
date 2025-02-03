@@ -5,7 +5,7 @@ import { links } from "@/constants/footerLinks";
 
 const Footer = () => {
   return (
-    <div className="bg-[#020617] w-full text-white p-6 lg:p-16">
+    <div className="bg-secondary w-full text-white p-6 lg:p-16">
       {/* info and links container */}
       <div className="flex flex-col xl:flex-row xl:justify-between xl:gap-20 xl:items-center">
         {/* info */}

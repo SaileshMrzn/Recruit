@@ -21,13 +21,13 @@ export default {
           foreground: "hsl(var(--popover-foreground))",
         },
         // primary: {
-        // 	DEFAULT: 'hsl(var(--primary))',
-        // 	foreground: 'hsl(var(--primary-foreground))'
+        //   DEFAULT: "hsl(var(--primary))",
+        //   foreground: "hsl(var(--primary-foreground))",
         // },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
+        // secondary: {
+        //   DEFAULT: "hsl(var(--secondary))",
+        //   foreground: "hsl(var(--secondary-foreground))",
+        // },
         muted: {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
@@ -51,6 +51,7 @@ export default {
           "5": "hsl(var(--chart-5))",
         },
         primary: "#2697D4",
+        secondary: "#020617",
       },
       borderRadius: {
         lg: "var(--radius)",
