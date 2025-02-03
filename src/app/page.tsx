@@ -1,5 +1,5 @@
-import JobsList from "@/components/JobsList";
-import JobsNumber from "@/components/JobsNumber";
+import JobsList from "@/components/jobs/JobsList";
+import JobsNumber from "@/components/jobs/JobsNumber";
 import Image from "next/image";
 
 export default function Home() {

@@ -8,7 +8,7 @@ import {
   CardFooter,
   CardHeader,
 } from "@/components/ui/card";
-import { Badge } from "./ui/badge";
+import { Badge } from "../ui/badge";
 
 import { JobCardProps } from "@/types/jobTypes";
 
