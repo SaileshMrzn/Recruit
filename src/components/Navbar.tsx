@@ -3,7 +3,7 @@ import Link from "next/link";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 
 import { navLinks } from "@/constants/navLinks";
-import { Icons } from "@/constants/icons";
+import { Logos } from "@/constants/icons";
 
 import { Button } from "./ui/button";
 
@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <div className="flex justify-between items-center p-2 lg:px-8 lg:py-4 bg-white">
       {/* logo */}
-      <Icons.Logo className="w-36 h-auto lg:w-52" />
+      <Logos.Logo_SM />
       {/* nav links */}
       <ul className="hidden lg:flex w-1/2 lg:justify-between">
         {navLinks.map((nav, index) => (
