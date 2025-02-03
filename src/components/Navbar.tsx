@@ -18,8 +18,8 @@ const Navbar = () => {
   return (
     <div className="flex justify-between items-center p-2 lg:px-8 lg:py-4 bg-white">
       {/* logo */}
-      {/* <Logos.Logo_SM /> */}
-      <p>[logo]</p>
+      <Logos.Logo_SM className="lg:hidden" />
+      <Logos.Logo className="hidden lg:block" />
       {/* nav links */}
       <nav className="hidden lg:flex w-1/2 lg:justify-between">
         {navLinks.map((nav, index) => (
