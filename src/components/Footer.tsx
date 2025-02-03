@@ -6,7 +6,9 @@ import { links } from "@/constants/footerLinks";
 const Footer = () => {
   return (
     <div className="bg-[#020617] w-full text-white p-6 lg:p-16">
+      {/* info and links container */}
       <div className="flex flex-col xl:flex-row xl:justify-between xl:gap-20 xl:items-center">
+        {/* info */}
         <div className="self-start">
           <Logos.Logo_Second />
           <p className="mt-4 xl:w-2/3 self-start">
@@ -32,10 +34,10 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* <div className="flex flex-col gap-6"> */}
       {/* divider */}
       <div className="h-px w-full bg-white opacity-10 my-10"></div>
 
+      {/* cc and socials container */}
       <div className="flex flex-col gap-6 md:flex-row md:justify-between md:items-center">
         {/* cc */}
         <p>All rights reserved @rajeshgraphix2024</p>
@@ -48,7 +50,6 @@ const Footer = () => {
           <Icons.Youtube />
         </div>
       </div>
-      {/* </div> */}
     </div>
   );
 };
